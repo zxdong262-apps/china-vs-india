@@ -80,13 +80,6 @@ const chinaGovData = {
       source: 'National Bureau of Statistics of China',
       year: 2024,
       unit: 'million tonnes'
-    },
-    fertilizer: {
-      china: 57.5,
-      india: 46.0,
-      source: 'National Bureau of Statistics of China',
-      year: 2024,
-      unit: 'million tonnes'
     }
   },
   

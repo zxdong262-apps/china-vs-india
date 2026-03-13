@@ -14,7 +14,6 @@ const metrics = [
   { key: 'steelProduction', path: 'steelProduction', category: 'metals', icon: '🔩' },
   { key: 'aluminum', path: 'manufacturing.aluminum', category: 'metals', icon: '🔧' },
   { key: 'grainProduction', path: 'agricultureProduction.grain', category: 'agricultureGrain', icon: '🌾' },
-  { key: 'fertilizer', path: 'agricultureProduction.fertilizer', category: 'agricultureFertilizer', icon: '🧪' },
   { key: 'vegetableProduction', path: 'agricultureProduction.vegetables', category: 'agricultureVegetable', icon: '🥬' },
   { key: 'mariculture', path: 'agricultureProduction.mariculture', category: 'agricultureMariculture', icon: '🦪' },
   { key: 'automobile', path: 'manufacturing.automobile', category: 'automobile', icon: '🚗' },

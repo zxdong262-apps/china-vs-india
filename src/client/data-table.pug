@@ -13,7 +13,7 @@ section#data-table.section(aria-labelledby='data-table-title')
           th#tableUrl.table-header-url(colspan=7, scope='colgroup')
             .url-qr-container
               if isProduction
-                - var qrCodeName = currentLocale === 'en_US' ? 'qrcode-china-vs-rest-of-the-world.png' : 'qrcode-china-vs-rest-of-the-world-' + currentLocale + '.png'
+                - var qrCodeName = currentLocale === 'en_US' ? 'qrcode-china-vs-india.png' : 'qrcode-china-vs-india-' + currentLocale + '.png'
                 img.qr-code(src='/images/' + qrCodeName, alt='QR Code')
               else
                 #qr-code-wrap
@@ -38,16 +38,20 @@ section#data-table.section(aria-labelledby='data-table-title')
               span.unit-label  (#{locale.units[itemData.unit] || itemData.unit})
             td.china
               - const chinaValue = itemData.china
-              - const chinaGDP = itemData.militaryBudgetInGDP ? ' (' + itemData.militaryBudgetInGDP.china + '% of GDP)' : ''
-              span.value= chinaValue + chinaGDP
+              - const chinaGDP = itemData.militaryBudgetInGDP ? itemData.militaryBudgetInGDP.china + '% GDP' : ''
+              - const chinaFiscalRevenue = itemData.militaryBudgetInFiscalRevenue ? itemData.militaryBudgetInFiscalRevenue.china + '% ' + locale.data.fiscalRevenue : ''
+              - const chinaSuffix = chinaGDP && chinaFiscalRevenue ? '(' + chinaGDP + ', ' + chinaFiscalRevenue + ')' : (chinaGDP ? '(' + chinaGDP + ')' : (chinaFiscalRevenue ? '(' + chinaFiscalRevenue + ')' : ''))
+              span.value= chinaValue + chinaSuffix
             td(colspan=2)
               .percent-bar-container
                 .percent-bar.china-bar(style='width:' + chinaPercent + '%')
                 .percent-bar.india-bar(style='width:' + indiaPercent + '%')
             td
               - const indiaValue = itemData.india
-              - const indiaGDP = itemData.militaryBudgetInGDP ? ' (' + itemData.militaryBudgetInGDP.india + '% of GDP)' : ''
-              span.value= indiaValue + indiaGDP
+              - const indiaGDP = itemData.militaryBudgetInGDP ? itemData.militaryBudgetInGDP.india + '% GDP' : ''
+              - const indiaFiscalRevenue = itemData.militaryBudgetInFiscalRevenue ? itemData.militaryBudgetInFiscalRevenue.india + '% ' + locale.data.fiscalRevenue : ''
+              - const indiaSuffix = indiaGDP && indiaFiscalRevenue ? '(' + indiaGDP + ', ' + indiaFiscalRevenue + ')' : (indiaGDP ? '(' + indiaGDP + ')' : (indiaFiscalRevenue ? '(' + indiaFiscalRevenue + ')' : ''))
+              span.value= indiaValue + indiaSuffix
             td
               span.value= itemData.world
             td= itemData.year

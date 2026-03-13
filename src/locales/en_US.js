@@ -73,6 +73,7 @@ export default {
     industrialRobots: 'Industrial Robots',
     militaryBudget: 'Military Budget',
     militaryBudgetInGDPPercentage: 'Military Budget (% of GDP)',
+    militaryBudgetInFiscalRevenuePercentage: 'Military Budget (% of Fiscal Revenue)',
     fiscalRevenue: 'Fiscal Revenue'
   },
   

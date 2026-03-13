@@ -73,6 +73,7 @@ export default {
     industrialRobots: '工业机器人产量',
     militaryBudget: '军费预算',
     militaryBudgetInGDPPercentage: '军费占GDP百分比',
+    militaryBudgetInFiscalRevenuePercentage: '军费占财政收入百分比',
     fiscalRevenue: '财政收入'
   },
   

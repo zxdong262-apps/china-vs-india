@@ -127,8 +127,8 @@ async function generateImages() {
       // Read the pre-generated QR code PNG and convert to base64 data URL
       // so it doesn't depend on the dev server's static file path
       const qrCodeFileName = localeCode === defaultLocale
-        ? 'qrcode-china-vs-rest-of-the-world.png'
-        : `qrcode-china-vs-rest-of-the-world-${localeCode}.png`;
+        ? 'qrcode-china-vs-india.png'
+        : `qrcode-china-vs-india-${localeCode}.png`;
       const qrCodeFilePath = path.join(IMAGES_DIR, qrCodeFileName);
       const qrCodeBase64 = (await fs.readFile(qrCodeFilePath)).toString('base64');
       const qrCodeDataUrl = `data:image/png;base64,${qrCodeBase64}`;

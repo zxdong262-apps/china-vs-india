@@ -237,15 +237,21 @@ const chinaGovData = {
     militaryBudgetInGDP: {
       china: 1.32,
       india: 2.28
+    },
+    // Military budget as percentage of fiscal revenue
+    // Calculation: militaryBudget (billion) / (fiscalRevenue (trillion) * 1000) * 100
+    militaryBudgetInFiscalRevenue: {
+      china: 7.9,
+      india: 20.7
     }
   },
 
-  // Fiscal revenue (2024, in trillion USD)
+  // Fiscal revenue (2025, in trillion USD)
   fiscalRevenue: {
     china: 3.1,
     india: 0.41,
     source: 'Ministry of Finance of China / Ministry of Finance of India',
-    year: 2024,
+    year: 2025,
     unit: 'trillion USD'
   }
 };

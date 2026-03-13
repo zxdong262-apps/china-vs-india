@@ -96,7 +96,19 @@ async function generateImages() {
       console.log(`Generating image for ${localeCode} from ${fullUrl}...`);
       
       const page = await browser.newPage();
-      
+
+      // Block the qrcodejs CDN script so its onload callback never fires.
+      // Without this, qrcodejs may load asynchronously *after* we inject our
+      // data-URL QR image, appending a second QR code into #qr-code-wrap.
+      await page.setRequestInterception(true);
+      page.on('request', interceptedReq => {
+        if (interceptedReq.url().includes('qrcodejs')) {
+          interceptedReq.abort();
+        } else {
+          interceptedReq.continue();
+        }
+      });
+
       // Set viewport for consistent rendering
       await page.setViewport({
         width: 1200,
@@ -132,7 +144,7 @@ async function generateImages() {
       const qrCodeFilePath = path.join(IMAGES_DIR, qrCodeFileName);
       const qrCodeBase64 = (await fs.readFile(qrCodeFilePath)).toString('base64');
       const qrCodeDataUrl = `data:image/png;base64,${qrCodeBase64}`;
-
+      await new Promise(resolve => setTimeout(resolve, 1000));
       // Set the QR code using the pre-generated image as a data URL
       await page.evaluate((url, qrCodeDataUrl) => {
         const tableUrl = document.getElementById('tableUrl');

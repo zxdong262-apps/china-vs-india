@@ -33,9 +33,9 @@ function getLocaleUrl(localeCode) {
 
 function getImageFileName(localeCode) {
   if (localeCode === defaultLocale) {
-    return 'china-vs-rest-of-world.png';
+    return 'china-vs-india.png';
   }
-  return `china-vs-rest-of-world-${localeCode}.png`;
+  return `china-vs-india-${localeCode}.png`;
 }
 
 // Get port from command line or use default

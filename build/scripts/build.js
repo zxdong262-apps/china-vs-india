@@ -69,7 +69,7 @@ async function build() {
       'inLanguage': localeToLanguageTag(localeCode),
       'publisher': {
         '@type': 'Organization',
-        'name': 'China vs Rest of the World',
+        'name': 'China vs India',
         'url': PRODUCTION_BASE_URL
       },
       'dateModified': new Date().toISOString().split('T')[0],

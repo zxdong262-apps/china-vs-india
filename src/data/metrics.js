@@ -11,6 +11,7 @@ const metrics = [
   { key: 'electricityProduction', path: 'electricityProduction', category: 'energy', icon: '⚡' },
   { key: 'windPower', path: 'powerCapacity.windPower', category: 'energy', icon: '💨' },
   { key: 'solarPower', path: 'powerCapacity.solarPower', category: 'energy', icon: '☀️' },
+  { key: 'hydropower', path: 'powerCapacity.hydropower', category: 'energy', icon: '💧' },
   { key: 'steelProduction', path: 'steelProduction', category: 'metals', icon: '🔩' },
   { key: 'aluminum', path: 'manufacturing.aluminum', category: 'metals', icon: '🔧' },
   { key: 'grainProduction', path: 'agricultureProduction.grain', category: 'agricultureGrain', icon: '🌾' },
@@ -22,7 +23,8 @@ const metrics = [
   { key: 'shipbuilding', path: 'manufacturing.shipbuilding', category: 'shipbuilding', icon: '🚢' },
   { key: 'expressway', path: 'transportation.expressway', category: 'transport', icon: '🛣️' },
   { key: 'highSpeedRail', path: 'transportation.highSpeedRail', category: 'rail', icon: '🚄' },
-  { key: 'militaryBudget', path: 'militaryBudget', category: 'military', icon: '⚔️' }
+  { key: 'militaryBudget', path: 'militaryBudget', category: 'military', icon: '⚔️' },
+  { key: 'fiscalRevenue', path: 'fiscalRevenue', category: 'economy', icon: '🏦' }
 ];
 
 export default {

@@ -54,8 +54,8 @@ const chinaGovData = {
       unit: 'million tonnes'
     },
     mariculture: {
-      china: 37.0,
-      india: 6.8,
+      china: 25.28,
+      india: 0.15,
       source: 'National Bureau of Statistics of China',
       year: 2024,
       unit: 'million tonnes'
@@ -143,6 +143,13 @@ const chinaGovData = {
       source: 'National Energy Administration of China',
       year: 2024,
       unit: 'GW'
+    },
+    hydropower: {
+      china: 450,
+      india: 56,
+      source: 'National Energy Administration of China',
+      year: 2025,
+      unit: 'GW'
     }
   },
   
@@ -223,7 +230,23 @@ const chinaGovData = {
     india: 85,
     source: 'SIPRI',
     year: 2024,
-    unit: 'billion USD'
+    unit: 'billion USD',
+    // Military budget as percentage of GDP
+    // GDP from world-bank.js: China 18.53 trillion, India 3.73 trillion
+    // Calculation: militaryBudget (billion) / (GDP (trillion) * 1000)
+    militaryBudgetInGDP: {
+      china: 1.32,
+      india: 2.28
+    }
+  },
+
+  // Fiscal revenue (2024, in trillion USD)
+  fiscalRevenue: {
+    china: 3.1,
+    india: 0.41,
+    source: 'Ministry of Finance of China / Ministry of Finance of India',
+    year: 2024,
+    unit: 'trillion USD'
   }
 };
 

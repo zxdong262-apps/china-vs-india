@@ -37,13 +37,17 @@ section#data-table.section(aria-labelledby='data-table-title')
               span #{item.icon} #{itemLabel}
               span.unit-label  (#{locale.units[itemData.unit] || itemData.unit})
             td.china
-              span.value= itemData.china
+              - const chinaValue = itemData.china
+              - const chinaGDP = itemData.militaryBudgetInGDP ? ' (' + itemData.militaryBudgetInGDP.china + '% of GDP)' : ''
+              span.value= chinaValue + chinaGDP
             td(colspan=2)
               .percent-bar-container
                 .percent-bar.china-bar(style='width:' + chinaPercent + '%')
                 .percent-bar.india-bar(style='width:' + indiaPercent + '%')
             td
-              span.value= itemData.india
+              - const indiaValue = itemData.india
+              - const indiaGDP = itemData.militaryBudgetInGDP ? ' (' + itemData.militaryBudgetInGDP.india + '% of GDP)' : ''
+              span.value= indiaValue + indiaGDP
             td
               span.value= itemData.world
             td= itemData.year

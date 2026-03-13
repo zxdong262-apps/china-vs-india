@@ -48,6 +48,7 @@ export default {
     manufacturingOutput: 'Manufacturing Output',
     windPower: 'Wind Power',
     solarPower: 'Solar Power',
+    hydropower: 'Hydropower',
     energyProduction: 'Energy Production',
     agricultureProduction: 'Agriculture Production',
     grainProduction: 'Grain Production',
@@ -71,7 +72,8 @@ export default {
     tenNonferrousMetals: 'Ten Nonferrous Metals',
     industrialRobots: 'Industrial Robots',
     militaryBudget: 'Military Budget',
-    militaryBudgetInGDPPercentage: 'Military Budget (% of GDP)'
+    militaryBudgetInGDPPercentage: 'Military Budget (% of GDP)',
+    fiscalRevenue: 'Fiscal Revenue'
   },
   
   // Countries/Regions

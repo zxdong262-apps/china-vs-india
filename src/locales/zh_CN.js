@@ -48,6 +48,7 @@ export default {
     manufacturingOutput: '制造业产出',
     windPower: '风电装机总量',
     solarPower: '太阳能装机总量',
+    hydropower: '水力发电装机总量',
     energyProduction: '能源产量',
     agricultureProduction: '农业产量',
     grainProduction: '粮食产量',
@@ -71,7 +72,8 @@ export default {
     tenNonferrousMetals: '十种主要有色金属产量',
     industrialRobots: '工业机器人产量',
     militaryBudget: '军费预算',
-    militaryBudgetInGDPPercentage: '军费占GDP百分比'
+    militaryBudgetInGDPPercentage: '军费占GDP百分比',
+    fiscalRevenue: '财政收入'
   },
   
   // 国家/地区

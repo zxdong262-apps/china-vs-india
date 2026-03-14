@@ -20,3 +20,8 @@ URL: [https://china-vs-india.html5beta.com/zh_CN/](https://china-vs-india.html5b
 ## 贡献
 
 如果您发现任何数据错误，请随时提交Pull Request来修正数据。
+
+## 相关链接
+
+- [中国 vs 世界其他国家](https://china-vs-rest-of-the-world.html5beta.com/)
+- [GitHub 仓库](https://github.com/zxdong262-apps/china-vs-rest-of-the-world)

@@ -24,4 +24,4 @@ URL: [https://china-vs-india.html5beta.com/zh_CN/](https://china-vs-india.html5b
 ## 相关链接
 
 - [中国 vs 世界其他国家](https://china-vs-rest-of-the-world.html5beta.com/)
-- [GitHub 仓库](https://github.com/zxdong262-apps/china-vs-rest-of-the-world)
+- [中国 VS 美国](https://china-vs-us.html5beta.com/)

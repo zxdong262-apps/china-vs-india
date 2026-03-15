@@ -24,4 +24,4 @@ If you find any data errors, please feel free to submit a Pull Request to fix th
 ## Related Links
 
 - [China vs Rest of the World](https://china-vs-rest-of-the-world.html5beta.com/)
-- [GitHub Repository](https://github.com/zxdong262-apps/china-vs-rest-of-the-world)
+- [China VS United States](https://china-vs-us.html5beta.com/)

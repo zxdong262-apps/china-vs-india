@@ -45,6 +45,10 @@ const links = {
     'china-vs-rest-of-the-world': {
       name: 'china-vs-rest-of-the-world.html5beta.com',
       url: 'https://china-vs-rest-of-the-world.html5beta.com'
+    },
+    'china-vs-us': {
+      name: 'china-vs-us.html5beta.com',
+      url: 'https://china-vs-us.html5beta.com'
     }
   },
   
